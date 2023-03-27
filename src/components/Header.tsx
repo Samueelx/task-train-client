@@ -19,7 +19,7 @@ function Header() {
             </nav>
 
             <div className="flex-1">
-                <h1 className='text-3xl font-bold'>Portbased</h1>
+                <h1 className='text-3xl font-bold'>Task Train</h1>
             </div>
 
             <div className="flex-1">

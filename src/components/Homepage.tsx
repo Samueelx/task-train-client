@@ -7,9 +7,7 @@ function Homepage() {
             <Header />
             <div className='text-cyan-200 flex justify-center items-center'>
                 <p className='text-center m-20 p-10 text-xl font-mono font-medium leading-loose flex-1'>
-                    Portbased is a multi-tenant portfolio web application software platform that allows multiple users
-                    or tenants to access and manage their respective portfolios through a shared interface.
-                    Each tenant can create and manage their own portfolio.
+                    Task Train - Manage your tasks and schedule using this application.
                 </p>
             </div>
 
