@@ -1,0 +1,5 @@
+.bg_image {
+    background-image: url('../assets/site-bg.jpg');
+    background-size: cover;
+    height: 100vh;
+}
