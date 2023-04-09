@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
 import './components/Homepage'
 // import Homepage from './components/Homepage'
@@ -14,18 +15,20 @@ function App() {
 
   useEffect(() => {
     fetch(TASKS).then(response => response.json())
-    .then(data => {
-      setTodos(data)
-    })
+      .then(data => {
+        setTodos(data)
+      })
   }, [])
 
   return (
-    <div>
-      <Homepage />
-      <Login />
-      <Signup />
-      <Todos todos={todos}/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Homepage />} />
+        <Route path='login' element={<Login />} />
+        <Route path='signup' element={<Signup />} />
+        <Route path='todos' element={<Todos todos={todos}/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

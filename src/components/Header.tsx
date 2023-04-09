@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+
 function Header() {
     return (
         <header className="flex justify-between p-8 bg-emerald-200 z-50">
             <nav className="flex-1">
                 <ul>
                     <li className="float-left">
-                        <a href="#" className="text-lg hover:text-sky-700 hover:underline mx-2">Home</a>
+                        <NavLink to='/' className="text-lg hover:text-sky-700 hover:underline mx-2">Home</NavLink>
                     </li>
                     <li className="float-left">
                         <a href="#" className="text-lg hover:text-sky-700 hover:underline mx-2">Services & Prices</a>
@@ -25,10 +27,10 @@ function Header() {
             <div className="flex-1">
                 <ul>
                     <li className="float-right">
-                        <a href="#" className="text-lg hover:text-sky-700 hover:underline mx-2">Login</a>
+                        <NavLink to='login' className="text-lg hover:text-sky-700 hover:underline mx-2">Login</NavLink>
                     </li>
                     <li className="float-right">
-                        <a href="#" className="text-lg hover:text-sky-700 hover:underline mx-2">Signup</a>
+                        <NavLink to ='signup' className="text-lg hover:text-sky-700 hover:underline mx-2">Signup</NavLink>
                     </li>
                 </ul>
             </div>
